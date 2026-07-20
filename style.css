@@ -1,0 +1,346 @@
+/* ===========================
+   SAAD HASSAN PORTFOLIO
+   STYLE.CSS PART 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    border-bottom:2px solid gold;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:gold;
+    text-decoration:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HOME */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:130px 8%;
+}
+
+.left{
+    width:50%;
+}
+
+.left h4{
+    color:gold;
+    font-size:25px;
+}
+
+.left h1{
+    font-size:65px;
+    margin:15px 0;
+}
+
+.left h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.left p{
+    color:#bbb;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.buttons{
+    margin-bottom:30px;
+}
+
+.btn,
+.btn2{
+
+display:inline-block;
+padding:15px 35px;
+margin-right:15px;
+border-radius:8px;
+text-decoration:none;
+transition:.4s;
+
+}
+
+.btn{
+
+background:gold;
+color:black;
+font-weight:bold;
+
+}
+
+.btn:hover{
+
+background:white;
+
+}
+
+.btn2{
+
+border:2px solid gold;
+color:gold;
+
+}
+
+.btn2:hover{
+
+background:gold;
+color:black;
+
+}
+
+.social a{
+
+color:white;
+font-size:28px;
+margin-right:18px;
+transition:.4s;
+
+}
+
+.social a:hover{
+
+color:gold;
+
+}
+
+.right{
+
+width:40%;
+text-align:center;
+
+}
+
+.right img{
+
+width:380px;
+border-radius:20px;
+border:5px solid gold;
+box-shadow:0 0 35px gold;
+
+}
+/* ===========================
+   ABOUT
+=========================== */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:42px;
+    color:gold;
+    margin-bottom:40px;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    color:#ccc;
+    font-size:18px;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:35px 25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+    border:2px solid transparent;
+}
+
+.card i{
+    font-size:45px;
+    color:gold;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:22px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:gold;
+    box-shadow:0 0 20px rgba(255,215,0,.35);
+}
+
+/* ===========================
+   PORTFOLIO
+=========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.item{
+    overflow:hidden;
+    border-radius:15px;
+    border:2px solid gold;
+}
+
+.item img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.item:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#181818;
+    padding:35px;
+    border-radius:15px;
+    border:2px solid gold;
+}
+
+.contact-box p{
+    margin:18px 0;
+    font-size:19px;
+}
+
+.contact-box i{
+    color:gold;
+    margin-right:10px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    border-top:2px solid gold;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#bbb;
+    margin:6px 0;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:0 10px;
+    font-size:16px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left h1{
+    font-size:42px;
+}
+
+.right{
+    margin-bottom:35px;
+}
+
+.right img{
+    width:280px;
+}
+
+.buttons a{
+    display:block;
+    margin:12px auto;
+    width:220px;
+}
+
+.social{
+    margin-top:25px;
+}
+
+}
+nav a.active{
+    color:gold;
+    border-bottom:2px solid gold;
+    padding-bottom:5px;
+}
